@@ -1,11 +1,12 @@
 package com.stefanini.hackathon.escola;
 
 public class Turma {
-	int [] notas;
+	Aluno[] alunos;
 	
 	void imprimeNotas() {
-		for(int i = 0; i < this.notas.length; i++) {
-			System.out.println(this.notas[i]);
+		for(int i = 0; i < this.alunos.length; i++) {
+			Aluno aluno = this.alunos[i];
+			System.out.println(aluno.nota);
 		}
 	}
 	
